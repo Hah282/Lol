@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the dedicated faculty of Sta. Lucia Senior High School.">
+    <meta name="author" content="Sta. Lucia Senior High School">
+    <title>School Faculties - Sta. Lucia Senior High School</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/c6e758733f.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+           }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+            
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            
+        }
+
+        /* Faculty Section */
+        .faculty-grid {
+            gap: 20px;
+            margin-top: 20px;
+            display:grid;
+            grid-template-columns:auto auto;
+            
+       }
+
+        .faculty-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .faculty-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .faculty-card h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #00217e;
+        }
+
+        .faculty-card p {
+            margin: 5px 0 15px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+       
+      .header{
+          background-color:#0044cc;
+          color:#fff;
+      }
+    </style>
+</head>
+<body>
+    
+    <header class="sticky-header">
+        <a href="index.html">
+        <img src="image/po.jpg">
+        </a>
+     <input id="check" type="checkbox" name="menu">
+     
+     <label id="bars" for="check">
+     <i class="fa-solid fa-bars"></i>
+     </label>
+     <label id="xmark" for="check">
+     <i class="fa-solid fa-xmark"></i>
+     </label>
+   
+     <ul class="submenu">
+      <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a href="about.html"><i class="fa-solid fa-user"></i></a>
+<a href="strand.html>"<i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+<a href="admission.html"><i class="fa-solid fa-file-signature"></i></a>
+<a href="facilities.html"><i class="fa-solid fa-house-medical"></i></a>
+<a href="faculty.html"><i class="fa-solid fa-house-user"></i></a>
+
+              <hr>
+              
+              <li class="li">
+                  
+              <a class="anch" href="index.html">
+                           </i>Home</a>    
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+              <a class="anch" href="about.html">About</a>
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+              <a class="anch" href="strand.html">Strands</a>
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+              <a class="anch" href="contact.html">Contact</a>
+              </li>
+              
+              <hr>
+              
+              
+              <li class="li">
+              <a class="ancho" href="admission.html">Admission</a>
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+             <a class="ancho" href="facilities.html">Facilities</a>
+              </li>
+              
+              <hr>
+              
+               <li class="li">
+             <a class="ancho" href="faculty.html">Faculty</a>
+              </li>
+              
+              
+     </ul>
+   </header>
+   
+    <!-- Page Title -->
+    <div class="header">
+        <h1>Meet Our Faculty</h1>
+        <h2>Sta. Lucia Senior High School</h2>
+    </div>
+
+    
+    <div class="container">
+        <div class="faculty-grid">
+         
+            <div class="faculty-card">
+                <img src="image/prin.jpg" alt="John Doe">
+                <h3>Sir Noel Valerio</h3>
+                <p>Principal</p>
+            </div>
+         
+            <div class="faculty-card">
+                <img src="image/kompan.jpg" alt="Jane Smith">
+                <h3>Sharon Bausa</h3>
+                <p>Komunikasyon Teacher</p>
+            </div>
+         
+            <div class="faculty-card">
+                <img src="image/per.jpg" alt="Michael Brown">
+                <h3>Rosalyn Evasco</h3>
+                <p>Per-dev Teacher</p>
+            </div>
+        
+            <div class="faculty-card">
+                <img src="image/ict.jpg" alt="Emily White">
+                <h3>George Mabaquiao</h3>
+                <p>Programming Teacher</p>
+            </div>
+        
+            <div class="faculty-card">
+                <img src="image/pe.jpg" alt="David Lee">
+                <h3>Charismalyn Cantoria</h3>
+                <p>P.E Teacher</p>
+            </div>
+            
+            <div class="faculty-card">
+                <img src="image/gen.jpg" alt="David Lee">
+                <h3>Ace Angstrom</h3>
+                <p>Genmath Teacher</p>
+            </div>
+            
+            <div class="faculty-card">
+                <img src="image/etec.jpg" alt="David Lee">
+                <h3>Jay-Ann Lipan</h3>
+                <p>E-TECH Teacher</p>
+            </div>
+            
+            
+            <div class="faculty-card">
+                <img src="image/my.jpeg" alt="David Lee">
+                <h3>Myra N. Francisco</h3>
+                <p>E.L.S Teacher</p>
+            </div>
+            
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sta. Lucia Senior High School. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

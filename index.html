@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sta. Lucia Senior High School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/c6e758733f.js" crossorigin="anonymous"></script>
+
+    <style>
+     
+        .hero {
+            background: url('image/sta.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: Georgia;
+            font-size: 300%;
+            color: white;
+            text-shadow: 
+                -2px -2px 0 #00217e, 
+                2px -2px 0 #00217e, 
+                -2px 2px 0 #00217e, 
+                2px 2px 0 #00217e,
+                -3px -3px 0 #00217e, 
+                3px -3px 0 #00217e, 
+                -3px 3px 0 #00217e, 
+                3px 3px 0 #00217e;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .lb {
+            background-color: #0044cc;
+        }
+
+        .db {
+            background-color: #00217e;
+        }
+
+        .offer {
+            background-color: #F9F9F9;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .offer h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .offer p {
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .offer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .offer-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            
+        }
+
+        
+
+        .icon {
+            background-color: #0042ff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .offer-item h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .offer-item p {
+            margin: 0;
+            color: #555;
+        }
+
+        .res {
+            width: 10%;
+            margin-bottom: 20px;
+        }
+        
+      
+        
+        .about{
+            background-color:#0044cc;
+            padding-bottom:60px;
+            
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .about h2{
+            
+            text-align:center;
+            font-size:2rem;
+            padding:40px;
+            color:#fff;
+            text-shadow: 
+                -2px -2px 0 #00217e, 
+                2px -2px 0 #00217e, 
+                -2px 2px 0 #00217e, 
+                2px 2px 0 #00217e,
+                -3px -3px 0 #00217e, 
+                3px -3px 0 #00217e, 
+                -3px 3px 0 #00217e, 
+                3px 3px 0 #00217e;
+                
+        }
+        
+        .about p{
+            width:80%;
+            text-align:center;
+            padding-left:60px;
+            font-size:120%;
+            font-weight:bold;
+            color:#fff;
+            
+        }
+        
+       
+        .about button{
+            background-color:#fff;
+            width:30%;
+            height:50px;
+            margin-left:210px;
+            margin-top:40px;
+            
+            border-radius:20px;
+        }
+        .about a{
+            text-align:center;
+            color:#0044cc;
+            font-size:120%;
+            font-weight:bold;
+        }
+        
+        .events-section { 
+            padding: 40px; 
+            text-align: center; 
+            background-color: #f9f9f9;
+        } 
+        
+        .events-section h2 { 
+             font-size: 32px;
+             margin-bottom: 20px;
+        } 
+        
+        .event-card {
+              background-color: white;
+              border: 1px solid #ddd;
+              border-radius: 8px; 
+              padding: 20px; 
+              margin: 20px auto; 
+              max-width: 600px; 
+              text-align: left;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); } 
+              
+       .event-card h3 { 
+              font-size: 24px; 
+              margin-bottom: 10px; 
+              color: #333; 
+      }
+      
+      .event-card p {
+              font-size: 16px;
+              line-height: 1.5;
+              margin-bottom: 10px; 
+      } 
+      
+      .event-date { 
+              font-weight: bold; 
+              color:#0044cc; 
+      }
+      
+      .facult{
+            background-color:#00217e;
+            padding-bottom:60px;
+            
+            
+        }
+        
+        .facult h2{
+            color:#fff;
+            text-align:center;
+            font-size:2rem;
+            padding:50px;
+             text-shadow: 
+                -2px -2px 0 #0044cc, 
+                2px -2px 0 #0044cc, 
+                -2px 2px 0 #0044cc, 
+                2px 2px 0 #0044cc,
+                -3px -3px 0 #0044cc, 
+                3px -3px 0 #0044cc, 
+                -3px 3px 0 #0044cc, 
+                3px 3px 0 #0044cc;
+                
+            
+        }
+        
+       
+        
+        .facult button{
+            background-color:#fff;
+            width:30%;
+            height:50px;
+            margin-left:210px;
+            margin-top:40px;
+            
+            border-radius:20px;
+        }
+        .facult a{
+            text-align:center;
+            color:#0044cc;
+            font-size:120%;
+            font-weight:bold;
+        }
+        
+        .facult img{
+            width:70%;
+            height:auto;
+            border:5px solid #0044cc;
+            margin-left:90px;
+            
+        }
+    </style>
+</head>
+<body bgcolor="#b4b4b4">
+
+    <header class="sticky-header">
+        <a href="index.html">
+        <img src="image/po.jpg">
+        </a>
+     <input id="check" type="checkbox" name="menu">
+     
+     <label id="bars" for="check">
+     <i class="fa-solid fa-bars"></i>
+     </label>
+     <label id="xmark" for="check">
+     <i class="fa-solid fa-xmark"></i>
+     </label>
+   
+     <ul class="submenu">
+      <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a href="about.html"><i class="fa-solid fa-user"></i></a>
+<a href="strand.html>"<i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+<a href="admission.html"><i class="fa-solid fa-file-signature"></i></a>
+<a href="facilities.html"><i class="fa-solid fa-house-medical"></i></a>
+<a href="faculty.html"><i class="fa-solid fa-house-user"></i></a>
+
+              <hr>
+              
+              <li class="li">
+                  
+              <a class="anch" href="index.html">
+                           </i>Home</a>    
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+              <a class="anch" href="about.html">About</a>
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+              <a class="anch" href="strand.html">Strands</a>
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+              <a class="anch" href="contact.html">Contact</a>
+              </li>
+              
+              <hr>
+              
+              
+              <li class="li">
+              <a class="ancho" href="admission.html">Admission</a>
+              </li>
+              
+              <hr>
+              
+              <li class="li">
+             <a class="ancho" href="facilities.html">Facilities</a>
+              </li>
+              
+              <hr>
+              
+               <li class="li">
+             <a class="ancho" href="faculty.html">Faculty</a>
+              </li>
+              
+              
+     </ul>
+   </header>
+
+    <div class="hero">
+        <h1>WELCOME TO<br><br>STA. LUCIA SENIOR HIGH SCHOOL</h1>
+    </div>
+
+    <div class="section lb">
+        <img src="image/teach.png" class="res">
+        <h2>Teachers</h2>
+        <br>
+        <p>Our teachers are passionate about education and committed to providing a good<!--  --> learning experience. They have the experience and skills to foster an inclusive and supportive environment for every student.</p>
+    </div>
+
+    
+      <div class="section db"> 
+      <img src="image/books.png" class="res">
+      <h2>Book & Library</h2> 
+      <br>
+      <p>Books and libraries play a crucial role in the development of knowledge and creativity. They provide access to countless resources that inspire, inform, and challenge ideas, helping individuals of all ages grow and learn.</p>
+      </div> 
+      
+      <div class="section lb">
+      <img src="image/taekwondo.png" class="res">
+      <h2>Sports Clubs</h2> 
+      <br>
+      <p>Sport clubs offer a great opportunity for individuals to engage in physical activity, build teamwork skills, and develop discipline. They create a sense of community and provide a space for people to compete and achieve their personal fitness goals.</p> </div>
+    <div class="offer">
+        <h2>What We Offer</h2>
+        <p>We provide a nurturing environment where students can grow academically, socially, and emotionally. Our goal is to help each student reach their full potential, no matter their background or learning style.</p>
+        
+        <div class=" offer-list">
+            
+            <div class="offer-item">
+                <div class="icon">🔒</div>
+                <div>
+                    <h3>Safety First</h3><br>
+                    <p>Your child's safety is our top priority. We maintain strict safety protocols to ensure a secure environment for all students.</p>
+                </div>
+            </div>
+            
+            <div class=" offer-item">
+                <div class="icon">📚</div>
+                <div>
+                    <h3>Regular Classes</h3><br>
+                    <p>We offer a wide range of classes to help students develop essential academic skills, including mathematics, language arts, science, and more.</p>
+                </div>
+            </div>
+        
+            <div class="offer-item">
+                <div class="icon">🏫</div>
+                <div>
+                    <h3>Sufficient Classrooms</h3><br>
+                    <p>Our classrooms are well-equipped and spacious, ensuring a comfortable and effective learning environment for each student.</p>
+                </div>
+                </div>
+                
+                <div class="offer-item">
+                <div class="icon">🙋‍♀️</div>
+                <div>
+                    
+                    <h3>Parental Involvement</h3><br>
+                    <p>Opportunities for parents to engage with the school community through regular meetings and volunteer programs.</p>
+                </div>
+                </div>
+                
+              
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>About Us</h2>
+         
+        <p>
+            Welcome to STA. LUCIA SENIOR HIGHSCHOOL, where we inspire and empower students to reach their full potential. Our school is dedicated to fostering a supportive and engaging learning environment for students from Grade 11-12.
+        </p>
+        
+        <button>
+        <a href="about.html">Learn More ---></a>
+        </button>
+    </div>
+    
+    <div class="facult">
+        <h2>Faculty</h2>
+        <img src="image/fac.jpeg">
+        
+        <button>
+        <a href="faculty.html">Meet Our Faculty ---></a>
+        </button>
+    </div>
+    
+    <div class="events-section">
+    <h2>Upcoming Events</h2> 
+   
+   <div class="event-card"> 
+   <h3>BOOK HUNT - GR-11</h3> 
+   <p class="event-date">Date: November 26, 2024</p>
+   <p>In line with the National Reading Month celebration, we invite you to join the Book Hunt.<br><br>
+Please click on this link to read the mechanics: <a href="https://tinyurl.com/4sm926ck">https://tinyurl.com/4sm926ck</a>
+<br><br>
+Please click on this link to register for the event: 
+<a href="https://forms.gle/sVWgkzvAhYwQRT3w5">https://forms.gle/sVWgkzvAhYwQRT3w5</a><br><br>
+Thank you and have a blessed day!
+
+</p>
+    </div> 
+   
+   <div class="event-card"> 
+   <h3>BOOK HUNT - GR-12</h3> 
+   <p class="event-date">Date November 27, 2025</p> 
+   <p>In line with the National Reading Month celebration, we invite you to join the Book Hunt.<br><br>
+Please click on this link to read the mechanics: <a href="https://tinyurl.com/4sm926ck">https://tinyurl.com/4sm926ck</a>
+<br><br>
+Please click on this link to register for the event: 
+<a href="https://forms.gle/sVWgkzvAhYwQRT3w5">https://forms.gle/sVWgkzvAhYwQRT3w5</a><br><br>
+Thank you and have a blessed day!
+</p> 
+   </div>
+    </div> 
+    
+    
+    
+    
+    <footer>
+        <p>&copy; 2024 Sta. Lucia Senior High School. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

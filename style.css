@@ -1,0 +1,163 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+    list-style-type:none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.sticky-header {
+  position:sticky; 
+  top:0;
+  left: 0;
+  right: 0;
+   z-index: 999; 
+  background-color:white;
+  border-bottom:5px solid #00217e;
+}
+
+.sticky-header img{
+   width:50px; 
+   padding-left:20px;
+}
+
+#check{
+    display:none;
+}
+
+#bars{
+    position:absolute;
+    display:block;
+    right:20px;
+    top:0px;
+    padding: 10px;
+    font-size: 200%;
+    color:#00217e;
+}
+
+.submenu{
+    position:fixed;
+    right:0px;
+    top:58px;
+    font-size:150%;
+    background-color:white;
+    width:200px;
+    border-bottom:5px solid #00217e;
+    border-left:5px solid #00217e;
+    text-align:right;
+    font-weight:bold;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    opacity:0.5;
+}
+
+.anch{
+    color:#00217e;
+    padding:10px 10px 10px 100px;
+}
+
+.ancho{
+    color:#00217e;
+    padding:10px 10px 10px 80px;
+}
+
+.li{
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-right:20px;
+    color:#00217e;
+}
+
+
+#check:checked~.submenu{
+    transform: translateX(0%);
+    opacity:1;
+}
+
+.fa-house{
+    position:absolute; 
+    top:12px;
+    right:143px;
+    color:#00217e;
+}
+
+.fa-user{
+    position:absolute; 
+    top:61px;
+    right:146px;
+    color:#00217e;
+}
+
+.fa-graduation-cap{
+   position:absolute; 
+    top:113px;
+    right:141px;
+    color:#00217e;
+}
+
+.fa-phone{
+   position:absolute; 
+    top:161px;
+    right:145px;
+    color:#00217e;
+}
+
+.fa-file-signature{
+   position:absolute; 
+    top:212px;
+    right:140px;
+    color:#00217e;
+}
+
+.fa-house-medical{
+   position:absolute; 
+    top:262px;
+    right:140px;
+    color:#00217e;
+}
+
+.fa-house-user{
+    position:absolute; 
+    top:311px;
+    right:140px;
+    color:#00217e;
+}
+
+
+#xmark{
+    position:absolute;
+    display:block;
+    right:24px;
+    top:0px;
+    padding: 10px;
+    font-size: 200%;
+    transform: scale(0.1);
+    color:#00217e;
+}
+
+#check:checked~#xmark{
+    transform: rotate(90deg) scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#check:not(:checked)~#xmark{
+    transform:scale(0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#check:checked~#bars{
+    transform: rotate(90deg) scale(0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#check:not(:checked)~#bars{
+    transform:  scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.li:hover{
+    background-color:#afafaf;
+   
+}
+
